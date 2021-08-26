@@ -1,0 +1,23 @@
+@media screen and (orientation: portrait) and (max-width: 992.98px) { 
+  /* вертикально */
+  .header { height: 88px;  } 
+  }
+
+@media screen and (orientation: landscape) and (max-width: 568px) { 
+  /* горизонтально  */
+  .header { height: 68px; } 
+  }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+  .c-catalog .c-button {
+  	background-color: #FC9F00;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+    .c-search__form-input {
+      margin-top: 8px;
+    }
+  }

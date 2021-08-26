@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: var(--color-accent);
+  color: #333;
+}
+
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(124, 67, 67, 0.349);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  overflow-anchor: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  &._lock {
+    overflow: hidden;
+  }
+}
+.main {
+  padding-top: var(--size);
+  height: calc(100vh - var(--size));
+  display: flex;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
