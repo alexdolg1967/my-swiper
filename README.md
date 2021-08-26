@@ -1,12 +1,4 @@
-# alexdolg.ru (переделка)
-
-## no SQL
-
-## Обработка ttf-файлов шрифтов
-
-```
-gulp fonts
-```
+# My swiper-slider
 
 ## Отразить изменения на Gihub Pages
 

@@ -57,14 +57,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // slide Change
 
   const curnum = document.querySelector(".slider-pagination-count .current");
-  const pagcur = document.querySelector(".slider-pagination-current");
+  const pagcur = document.querySelector(".slider-pagination-current__num");
   sliderText.on("slideChange", function () {
     let index = sliderText.realIndex + 1;
     gsap.to(curnum, 0.2, {
       force3D: true,
       y: -10,
       opacity: 0,
-      //onComplete: function()
+      onComplete: function () {
+        gsap.to(curnum, 0.1, {
+          force3D: true,
+          y: 10,
+        });
+        curnum.innerHTML = `0${index}`;
+        pagcur.innerHTML = `0${index}`;
+      },
     });
     gsap.to(curnum, 0.2, {
       force3D: true,
