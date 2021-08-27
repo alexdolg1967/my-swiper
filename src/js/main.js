@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".slider-pagination-count .total",
       type: "custom",
       renderCustom: function (swiper, current, total) {
-        return `0${total}`;
+        let totalRes = total >= 10 ? total : `0${total}`;
+        return totalRes;
       },
     },
   });
@@ -59,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const curnum = document.querySelector(".slider-pagination-count .current");
   const pagcur = document.querySelector(".slider-pagination-current__num");
   sliderText.on("slideChange", function () {
-    let index = sliderText.realIndex + 1;
+    let index = sliderText.realIndex + 1,
+      indexRes = index >= 10 ? index : `0${index}`;
     gsap.to(curnum, 0.2, {
       force3D: true,
       y: -10,
@@ -69,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
           force3D: true,
           y: 10,
         });
-        curnum.innerHTML = `0${index}`;
-        pagcur.innerHTML = `0${index}`;
+        curnum.innerHTML = indexRes;
+        pagcur.innerHTML = indexRes;
       },
     });
     gsap.to(curnum, 0.2, {
