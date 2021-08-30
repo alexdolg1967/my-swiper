@@ -1,4 +1,11 @@
+var Micromodal = require("micromodal");
+
 document.addEventListener("DOMContentLoaded", () => {
+  // Modal
+
+  Micromodal.init({});
+
+  // Swiper
   const sliderIMG = new Swiper(".slider-img", {
     // Optional parameters
     //   autoplay: {
