@@ -1,10 +1,4 @@
-var Micromodal = require("micromodal");
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Modal
-
-  Micromodal.init({});
-
   // Swiper
   const sliderIMG = new Swiper(".slider-img", {
     // Optional parameters
@@ -141,3 +135,34 @@ if (canUseWebp) {
 } else {
   body.classList.add("no-swebp");
 }
+
+// modal
+
+const btns = document.querySelectorAll(".modal-open");
+const modalOverlay = document.querySelector(".modal-overlay");
+const modalClose = document.querySelector(".modal__header .btn-close");
+const modals = document.querySelectorAll(".modal");
+
+btns.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    let path = e.currentTarget.getAttribute("data-modal-path");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+    body.classList.remove("_lock");
+    const target = document.querySelector(`[data-modal-target="${path}"]`);
+    target.classList.add("modal--visible");
+    modalOverlay.classList.add("modal-overlay--visible");
+    body.classList.add("_lock");
+  });
+});
+
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target == modalOverlay || e.target == modalClose) {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modals.forEach((el) => {
+      el.classList.remove("modal--visible");
+    });
+    body.classList.remove("_lock");
+  }
+});

@@ -1,0 +1,14 @@
+.modal {
+  &__form {
+    &-body {
+      padding: 0 2rem;
+    }
+    &-div {
+      display: flex;
+      flex-direction: column;
+    }
+    &-footer {
+      padding: 2rem;
+    }
+  }
+}

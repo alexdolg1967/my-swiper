@@ -1,20 +1,48 @@
-<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div
-      class="modal__container"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-1-title"
-    >
-      <header class="modal__header">
-        <h2 id="modal-1-title">Оставить заявку</h2>
-        <button aria-label="Закрыть окно" data-micromodal-close></button>
-      </header>
-
-      <div id="modal-1-content">
-        Modal Content
-      </div>
-      <footer class="modal__footer"></footer>
-    </div>
-  </div>
+<div class="modals">
+	<div class="modal-overlay">
+		<div class="modal modal--1" data-modal-target="form-popup">
+			<div class="modal-content">
+				<header class="modal__header">
+					<h4 class="modal__title">Оставьте заявку</h4>
+					<button class="btn-close" id="modal-close">
+						<svg>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</header>
+				<form class="modal__form" action="#" id="form">
+					<div class="modal__form-body">
+						<div class="modal__form-div">
+							<label for="" class="modal__form-label">Ваше Имя<i>*</i></label>
+							<input autocomplete="off" type="text" name="Имя" class="modal__form-input _req" placeholder=" " />
+						</div>
+						<div class="modal__form-div">
+							<label for="" class="modal__form-label">Ваш E-mail<i>*</i></label>
+							<input autocomplete="off" type="email" name="Имя" class="modal__form-input _email _req"
+								placeholder=" " />
+						</div>
+						<div class="modal__form-div">
+							<label for="" class="modal__form-label">Ваш Телефон<i>*</i> +7 (XXX) XXX XX XX</label>
+							<input autocomplete="off" type="tel" name="Телефон" class="modal__form-input _phone _req"
+								placeholder=" " />
+						</div>
+						<div class="modal__form-div dtext">
+							<label for="" class="modal__form-label">Сообщение<i>*</i></label>
+							<textarea name="Сообщение" id="" rows="3" class="modal__form-textarea _req"
+								placeholder=" "></textarea>
+						</div>
+					</div>
+					<div class="modal__form-footer">
+						<button type="submit" class="button modal__form-btn">
+							<span>Отправить</span>
+						</button>
+						<p>
+							Нажимая на кнопку “Отправмить” вы соглашаетесь с
+							<a href="#">“Пользовательским соглашением”</a>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
