@@ -11,7 +11,7 @@
   // отступы
   --header-height: 70px;
   --grid-gap: 10px;
-  --size: 70px;
+  --size: 50px;
 
   // шрифты
   --font-size: 16px;
@@ -26,12 +26,12 @@
 }
 @media (min-width: 768px) {
   :root {
+    --size: 70px;
     --grid-gap: 15px;
   }
 }
 @media (min-width: 992px) {
   :root {
-    
   }
 }
 @media (min-width: 1100px) {
