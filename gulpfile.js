@@ -64,6 +64,7 @@ const stylesBackend = () => {
     .pipe(sass().on("error", notify.onError()))
     .pipe(
       autoprefixer({
+        grid: true,
         cascade: false,
       })
     )

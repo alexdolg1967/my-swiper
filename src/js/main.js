@@ -1,3 +1,6 @@
+const lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy",
+});
 document.addEventListener("DOMContentLoaded", () => {
   // Swiper
   const sliderIMG = new Swiper(".slider-img", {
