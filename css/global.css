@@ -1,0 +1,350 @@
+html {
+  line-height: 1.3;
+  -webkit-text-size-adjust: 100%;
+}
+
+details,
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+hr {
+  height: 0;
+  overflow: visible;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: ButtonText dotted 1px;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkcard],
+[type=radio] {
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url(../fonts/oswaldmedium-webfont.woff2) format("woff2"),url(../fonts/oswaldmedium-webfont.woff) format("woff"),url(../fonts/oswaldmedium-webfont.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-display: swap;
+  src: url(../fonts/oswaldbold-webfont.woff2) format("woff2"),url(../fonts/oswaldbold-webfont.woff) format("woff"),url(../fonts/oswaldbold-webfont.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url(../fonts/ralewayregular.woff2) format("woff2"),url(../fonts/ralewayregular.woff) format("woff"),url(../fonts/ralewayregular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url(../fonts/ralewaymedium.woff2) format("woff2"),url(../fonts/ralewaymedium.woff) format("woff"),url(../fonts/ralewaymedium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url(../fonts/ralewaysemibold.woff2) format("woff2"),url(../fonts/ralewaysemibold.woff) format("woff"),url(../fonts/ralewaysemibold.ttf) format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url(../fonts/ralewayextrabold.woff2) format("woff2"),url(../fonts/ralewayextrabold.woff) format("woff"),url(../fonts/ralewayextrabold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url(../fonts/robotomedium.woff2) format("woff2"),url(../fonts/robotomedium.woff) format("woff"),url(../fonts/robotomedium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent: #f57500;
+  --color-accent-hover: #f55740;
+  --color-border: #3c3c3c;
+  --color-header: #252525;
+  --color-bg: #303030;
+  --header-height: 70px;
+  --grid-gap: 10px;
+  --size: 50px;
+  --font-size: 16px;
+  --font-family: "Raleway",sans-serif;
+  --font-system: -apple-system,BlinkMacSystemFont,Arial,sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: var(--color-accent);
+  color: #333;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #333;
+}
+
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(124,67,67,.349);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  overflow-anchor: none;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.main {
+  padding-top: var(--size);
+  height: calc(100vh - var(--size));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+@media (min-width:576px) {
+  :root {
+    --big-main-offset: 40px;
+    --modal-offset: 35px;
+  }
+}
+
+@media (min-width:768px) {
+  :root {
+    --size: 70px;
+    --grid-gap: 15px;
+  }
+}
+
+@media (min-width:1100px) {
+  :root {
+    --header-height: 120px;
+  }
+}
+
+@media (min-width:1200px) {
+  :root {
+    --grid-gap: 16px;
+  }
+}
+
+@media (min-width:1400px) {
+  :root {
+    --grid-gap: 20px;
+  }
+}
